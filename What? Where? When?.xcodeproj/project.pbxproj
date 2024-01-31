@@ -18,6 +18,22 @@
 		327E20382B6A003300736DB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E20372B6A003300736DB4 /* SignUpViewController.swift */; };
 		327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */; };
 		327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203D2B6A6A9600736DB4 /* Color+Extension.swift */; };
+		327E20432B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */; };
+		327E20442B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */; };
+		327E20452B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */; };
+		327E20472B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20462B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf */; };
+		327E20482B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20462B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf */; };
+		327E20492B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20462B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf */; };
+		327E204B2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204A2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf */; };
+		327E204C2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204A2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf */; };
+		327E204D2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204A2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf */; };
+		327E204F2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */; };
+		327E20502B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */; };
+		327E20512B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */; };
+		327E20532B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
+		327E20542B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
+		327E20552B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
+		32CF662F2B6A962700FB1A98 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF662E2B6A962700FB1A98 /* Font+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +69,12 @@
 		327E20372B6A003300736DB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
 		327E203D2B6A6A9600736DB4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mkhedruli_normal.otf; sourceTree = "<group>"; };
+		327E20462B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mkhedruli_book.otf; sourceTree = "<group>"; };
+		327E204A2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mkhedruli_bold.ttf; sourceTree = "<group>"; };
+		327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mtavruli_normal.ttf; sourceTree = "<group>"; };
+		327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mtavruli_bold.ttf; sourceTree = "<group>"; };
+		32CF662E2B6A962700FB1A98 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +130,7 @@
 				327E202F2B69FF2800736DB4 /* Login */,
 				327E20362B69FFFE00736DB4 /* SignUp */,
 				327E20392B6A004600736DB4 /* Password Recovery */,
+				327E20412B6A8C4400736DB4 /* Custom Fonts */,
 				327E203C2B6A6A8300736DB4 /* Extensions */,
 				3237E9C62B694E950030E918 /* Assets.xcassets */,
 				3237E9CB2B694E950030E918 /* Info.plist */,
@@ -177,8 +200,21 @@
 			isa = PBXGroup;
 			children = (
 				327E203D2B6A6A9600736DB4 /* Color+Extension.swift */,
+				32CF662E2B6A962700FB1A98 /* Font+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		327E20412B6A8C4400736DB4 /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */,
+				327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */,
+				327E204A2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf */,
+				327E20462B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf */,
+				327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */,
+			);
+			path = "Custom Fonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +321,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327E20432B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */,
 				3237E9C72B694E950030E918 /* Assets.xcassets in Resources */,
+				327E204F2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */,
+				327E20532B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */,
+				327E20472B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */,
+				327E204B2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327E204C2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */,
+				327E20482B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */,
+				327E20442B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */,
+				327E20542B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */,
+				327E20502B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327E204D2B6A8C8E00736DB4 /* bpg_nino_mkhedruli_bold.ttf in Resources */,
+				327E20492B6A8C7F00736DB4 /* bpg_nino_mkhedruli_book.otf in Resources */,
+				327E20452B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf in Resources */,
+				327E20552B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */,
+				327E20512B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +367,7 @@
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
 				3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */,
+				32CF662F2B6A962700FB1A98 /* Font+Extension.swift in Sources */,
 				327E20382B6A003300736DB4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
