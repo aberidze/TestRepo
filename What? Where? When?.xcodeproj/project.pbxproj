@@ -17,6 +17,7 @@
 		327E20352B69FFF500736DB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E20342B69FFF500736DB4 /* LoginViewController.swift */; };
 		327E20382B6A003300736DB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E20372B6A003300736DB4 /* SignUpViewController.swift */; };
 		327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */; };
+		327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203D2B6A6A9600736DB4 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		327E20342B69FFF500736DB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		327E20372B6A003300736DB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		327E203D2B6A6A9600736DB4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				327E202F2B69FF2800736DB4 /* Login */,
 				327E20362B69FFFE00736DB4 /* SignUp */,
 				327E20392B6A004600736DB4 /* Password Recovery */,
+				327E203C2B6A6A8300736DB4 /* Extensions */,
 				3237E9C62B694E950030E918 /* Assets.xcassets */,
 				3237E9CB2B694E950030E918 /* Info.plist */,
 			);
@@ -168,6 +171,14 @@
 				327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */,
 			);
 			path = "Password Recovery";
+			sourceTree = "<group>";
+		};
+		327E203C2B6A6A8300736DB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				327E203D2B6A6A9600736DB4 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327E20352B69FFF500736DB4 /* LoginViewController.swift in Sources */,
+				327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */,
 				3237E9C22B694E8B0030E918 /* ViewController.swift in Sources */,
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
