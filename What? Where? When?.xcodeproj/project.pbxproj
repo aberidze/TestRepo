@@ -130,6 +130,7 @@
 				327E202F2B69FF2800736DB4 /* Login */,
 				327E20362B69FFFE00736DB4 /* SignUp */,
 				327E20392B6A004600736DB4 /* Password Recovery */,
+				32CF66302B6AD75700FB1A98 /* Reusable Components */,
 				327E20412B6A8C4400736DB4 /* Custom Fonts */,
 				327E203C2B6A6A8300736DB4 /* Extensions */,
 				3237E9C62B694E950030E918 /* Assets.xcassets */,
@@ -215,6 +216,13 @@
 				327E20422B6A8C7200736DB4 /* bpg_nino_mkhedruli_normal.otf */,
 			);
 			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
+		32CF66302B6AD75700FB1A98 /* Reusable Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Reusable Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
