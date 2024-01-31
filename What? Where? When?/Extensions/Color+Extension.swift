@@ -5,4 +5,10 @@
 //  Created by Macbook Air 13 on 31.01.24.
 //
 
-import Foundation
+import UIKit
+
+extension UIColor {
+    public static let backgroundGray = UIColor(red: 30 / 255.0, green: 31 / 255.0, blue: 33 / 255.0, alpha: 1.0)
+    public static let backgroundGreen = UIColor(red: 38 / 255.0, green: 114 / 255.0, blue: 55 / 255.0, alpha: 1.0)
+    public static let backgroundRed = UIColor(red: 236 / 255.0, green: 28  / 255.0, blue: 36 / 255.0, alpha: 1.0)
+}
