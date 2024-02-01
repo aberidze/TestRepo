@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,8 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        let viewController = LoginViewController()
-        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        let startingVC = UIHostingController(rootView: IntroView())
+        let navController = UINavigationController(rootViewController: startingVC)
+        navController.isNavigationBarHidden = true
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }
 
