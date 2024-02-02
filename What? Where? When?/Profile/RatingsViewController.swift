@@ -1,16 +1,14 @@
 //
-//  HomeViewController.swift
+//  RatingsViewController.swift
 //  What? Where? When?
 //
 //  Created by Macbook Air 13 on 02.02.24.
 //
 
 import UIKit
-import SwiftUI
 
-final class HomeViewController: UIViewController {
+final class RatingsViewController: UIViewController {
     
-    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
     }

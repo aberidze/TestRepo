@@ -94,7 +94,9 @@ struct LoginView: View {
                 }
                 
                 NavigationLink {
-                    TabBarController()
+                    tabBarControllerRepresentable()
+                        .navigationBarBackButtonHidden(true)
+                        .edgesIgnoringSafeArea(.vertical)
                 } label: {
                     CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
                 }

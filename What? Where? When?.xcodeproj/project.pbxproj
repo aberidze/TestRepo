@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3237E20F2B6C879F004E6AC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E20E2B6C879F004E6AC0 /* TabBarController.swift */; };
 		3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */; };
+		3237E2132B6C8EBE004E6AC0 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E2122B6C8EBE004E6AC0 /* PlayViewController.swift */; };
+		3237E2152B6C8EF1004E6AC0 /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E2142B6C8EF1004E6AC0 /* RatingsViewController.swift */; };
 		3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BD2B694E8B0030E918 /* AppDelegate.swift */; };
 		3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */; };
 		3237E9C72B694E950030E918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3237E9C62B694E950030E918 /* Assets.xcassets */; };
@@ -41,6 +43,7 @@
 		327E20542B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
 		327E20552B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
 		32CF662F2B6A962700FB1A98 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF662E2B6A962700FB1A98 /* Font+Extension.swift */; };
+		32E4C3C32B6D2C75001385E5 /* CustomPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 /* Begin PBXFileReference section */
 		3237E20E2B6C879F004E6AC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3237E2122B6C8EBE004E6AC0 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		3237E2142B6C8EF1004E6AC0 /* RatingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsViewController.swift; sourceTree = "<group>"; };
 		3237E9BA2B694E8B0030E918 /* What? Where? When?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What? Where? When?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3237E9BD2B694E8B0030E918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		327E204E2B6A8C9800736DB4 /* bpg_nino_mtavruli_normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mtavruli_normal.ttf; sourceTree = "<group>"; };
 		327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mtavruli_bold.ttf; sourceTree = "<group>"; };
 		32CF662E2B6A962700FB1A98 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 			children = (
 				3237E20E2B6C879F004E6AC0 /* TabBarController.swift */,
 				3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */,
+				3237E2122B6C8EBE004E6AC0 /* PlayViewController.swift */,
+				3237E2142B6C8EF1004E6AC0 /* RatingsViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -274,6 +282,7 @@
 			children = (
 				327903012B6B1BD40051D8F8 /* CustomButton.swift */,
 				32391C082B6C4D7200B81247 /* CustomTextField.swift */,
+				32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -422,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E4C3C32B6D2C75001385E5 /* CustomPlayButton.swift in Sources */,
 				32391C092B6C4D7200B81247 /* CustomTextField.swift in Sources */,
 				327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */,
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
@@ -430,7 +440,9 @@
 				3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */,
 				327902FA2B6AF7E60051D8F8 /* OnboardingScreenView.swift in Sources */,
 				327903082B6C19890051D8F8 /* IntroView.swift in Sources */,
+				3237E2132B6C8EBE004E6AC0 /* PlayViewController.swift in Sources */,
 				327902FD2B6B0F0A0051D8F8 /* PageModel.swift in Sources */,
+				3237E2152B6C8EF1004E6AC0 /* RatingsViewController.swift in Sources */,
 				327903022B6B1BD40051D8F8 /* CustomButton.swift in Sources */,
 				3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */,
 				327903062B6C18710051D8F8 /* LoginView.swift in Sources */,
