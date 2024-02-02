@@ -44,6 +44,7 @@
 		327E20552B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */; };
 		32CF662F2B6A962700FB1A98 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF662E2B6A962700FB1A98 /* Font+Extension.swift */; };
 		32E4C3C32B6D2C75001385E5 /* CustomPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */; };
+		32E4C3C72B6D8851001385E5 /* CustomDashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4C3C62B6D8851001385E5 /* CustomDashboardItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		327E20522B6A8CA200736DB4 /* bpg_nino_mtavruli_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bpg_nino_mtavruli_bold.ttf; sourceTree = "<group>"; };
 		32CF662E2B6A962700FB1A98 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayButton.swift; sourceTree = "<group>"; };
+		32E4C3C62B6D8851001385E5 /* CustomDashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDashboardItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 				327903012B6B1BD40051D8F8 /* CustomButton.swift */,
 				32391C082B6C4D7200B81247 /* CustomTextField.swift */,
 				32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */,
+				32E4C3C62B6D8851001385E5 /* CustomDashboardItem.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				32391C092B6C4D7200B81247 /* CustomTextField.swift in Sources */,
 				327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */,
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
+				32E4C3C72B6D8851001385E5 /* CustomDashboardItem.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
 				327903002B6B10940051D8F8 /* CustomPageView.swift in Sources */,
 				3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */,

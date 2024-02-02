@@ -16,6 +16,12 @@ final class TabBarController: UITabBarController {
         self.setupTabBar()
         UITabBar.appearance().tintColor = .backgroundGold
         UITabBar.appearance().unselectedItemTintColor = .accentDarkGray
+        
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.backgroundColor = .backgroundGray
+        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        UITabBar.appearance().standardAppearance = tabBarAppearance
     }
     
     
@@ -33,12 +39,20 @@ final class TabBarController: UITabBarController {
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
         nav.navigationBar.tintColor = .white
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithOpaqueBackground()
+        navigationBarAppearance.backgroundColor = .backgroundGray
+        nav.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+        nav.navigationBar.standardAppearance = navigationBarAppearance
+        nav.navigationBar.compactAppearance = navigationBarAppearance
+        
         return nav
     }
 }
 
 
-// MARK: - UI
+// MARK: - UIViewControllerRepresentable
 struct tabBarControllerRepresentable: UIViewControllerRepresentable {
 
     typealias UIViewControllerType = TabBarController
