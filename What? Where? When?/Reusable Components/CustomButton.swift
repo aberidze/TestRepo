@@ -11,7 +11,8 @@ struct CustomButton: View {
     
     // MARK: - Properties
     @State var text: String
-    @State var color: UIColor
+    @State var backgroundColor: UIColor
+    @State var textColor: UIColor
     
     
     // MARK: - body
@@ -22,12 +23,12 @@ struct CustomButton: View {
             
             Text(text)
                 .font(Font(UIFont.ninoMtavruli?.withSize(16) ?? .systemFont(ofSize: 16)))
-                .foregroundColor(Color(uiColor: .backgroundGray))
+                .foregroundColor(Color(uiColor: textColor))
             
             Spacer()
         }
         .frame(maxWidth: 260, maxHeight: 44)
-        .background(Color(uiColor: color))
+        .background(Color(uiColor: backgroundColor))
         .cornerRadius(10)
         .shadow(radius: 20)
     }
@@ -37,6 +38,6 @@ struct CustomButton: View {
 // MARK: - Preview
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(text: "შემდეგი", color: .white)
+        CustomButton(text: "შემდეგი", backgroundColor: .white, textColor: .backgroundGray)
     }
 }

@@ -13,6 +13,7 @@
 		3237E9D52B694E950030E918 /* What__Where__When_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9D42B694E950030E918 /* What__Where__When_Tests.swift */; };
 		3237E9DF2B694E960030E918 /* What__Where__When_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9DE2B694E960030E918 /* What__Where__When_UITests.swift */; };
 		3237E9E12B694E960030E918 /* What__Where__When_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9E02B694E960030E918 /* What__Where__When_UITestsLaunchTests.swift */; };
+		32391C092B6C4D7200B81247 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32391C082B6C4D7200B81247 /* CustomTextField.swift */; };
 		327902FA2B6AF7E60051D8F8 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902F92B6AF7E60051D8F8 /* OnboardingScreenView.swift */; };
 		327902FD2B6B0F0A0051D8F8 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902FC2B6B0F0A0051D8F8 /* PageModel.swift */; };
 		327903002B6B10940051D8F8 /* CustomPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902FF2B6B10940051D8F8 /* CustomPageView.swift */; };
@@ -68,6 +69,7 @@
 		3237E9DA2B694E950030E918 /* What? Where? When?UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What? Where? When?UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3237E9DE2B694E960030E918 /* What__Where__When_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What__Where__When_UITests.swift; sourceTree = "<group>"; };
 		3237E9E02B694E960030E918 /* What__Where__When_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What__Where__When_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32391C082B6C4D7200B81247 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		327902F92B6AF7E60051D8F8 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		327902FC2B6B0F0A0051D8F8 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		327902FF2B6B10940051D8F8 /* CustomPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				327903012B6B1BD40051D8F8 /* CustomButton.swift */,
+				32391C082B6C4D7200B81247 /* CustomTextField.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32391C092B6C4D7200B81247 /* CustomTextField.swift in Sources */,
 				327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */,
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
