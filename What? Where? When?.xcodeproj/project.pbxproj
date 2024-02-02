@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3237E20F2B6C879F004E6AC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E20E2B6C879F004E6AC0 /* TabBarController.swift */; };
 		3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BD2B694E8B0030E918 /* AppDelegate.swift */; };
 		3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */; };
 		3237E9C72B694E950030E918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3237E9C62B694E950030E918 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3237E20E2B6C879F004E6AC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3237E9BA2B694E8B0030E918 /* What? Where? When?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What? Where? When?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3237E9BD2B694E8B0030E918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3237E20D2B6C812B004E6AC0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3237E20E2B6C879F004E6AC0 /* TabBarController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		3237E9B12B694E8B0030E918 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 				327E202F2B69FF2800736DB4 /* Login */,
 				327E20362B69FFFE00736DB4 /* SignUp */,
 				327E20392B6A004600736DB4 /* Password Recovery */,
+				3237E20D2B6C812B004E6AC0 /* Profile */,
 				32CF66302B6AD75700FB1A98 /* Reusable Components */,
 				327E20412B6A8C4400736DB4 /* Custom Fonts */,
 				327E203C2B6A6A8300736DB4 /* Extensions */,
@@ -419,6 +430,7 @@
 				327903022B6B1BD40051D8F8 /* CustomButton.swift in Sources */,
 				3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */,
 				327903062B6C18710051D8F8 /* LoginView.swift in Sources */,
+				3237E20F2B6C879F004E6AC0 /* TabBarController.swift in Sources */,
 				32CF662F2B6A962700FB1A98 /* Font+Extension.swift in Sources */,
 				327E20382B6A003300736DB4 /* SignUpViewController.swift in Sources */,
 			);
