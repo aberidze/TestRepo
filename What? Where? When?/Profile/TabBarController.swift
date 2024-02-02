@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import SwiftUI
 
-final class TabBarController: UIViewController {
+struct TabBarController: UIViewControllerRepresentable {
+
+    typealias UIViewControllerType = HomeViewController
+
+    func makeUIViewController(context: Context) -> HomeViewController {
+        return HomeViewController()
+    }
     
-    // MARK: - View Life Cycles
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemRed
+    func updateUIViewController(_ uiViewController: HomeViewController, context: Context) {
     }
 }

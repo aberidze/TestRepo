@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-
+    
     // MARK: - Properties
     @State var mailTitle: String = "მეილი"
     @State var passwordTitle: String = "პაროლი"
@@ -16,35 +16,37 @@ struct LoginView: View {
     @State var password: String = ""
     @State var showLogin: Bool = false
     @State var offsetY = UIScreen.main.bounds.height
-
+    
     
     // MARK: - body
     var body: some View {
-        ZStack {
-            Color(uiColor: .backgroundGray)
-                .ignoresSafeArea()
-            
-            VStack {
+        NavigationView {
+            ZStack {
+                Color(uiColor: .backgroundGray)
+                    .ignoresSafeArea()
                 
                 VStack {
-                    Spacer()
-                    Image("Logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 60, height: 60)
-                    Spacer()
+                    
+                    VStack {
+                        Spacer()
+                        Image("Logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                        Spacer()
+                    }
+                    
+                    if showLogin {
+                        loginStackView
+                            .offset(y: offsetY)
+                    }
                 }
-                
-                if showLogin {
-                    loginStackView
-                        .offset(y: offsetY)
-                }
-            }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    withAnimation(.easeInOut(duration: 0.5)) {
-                        self.showLogin.toggle()
-                        self.offsetY = 0
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            self.showLogin.toggle()
+                            self.offsetY = 0
+                        }
                     }
                 }
             }
@@ -91,7 +93,12 @@ struct LoginView: View {
                     }
                 }
                 
-                CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
+                NavigationLink {
+                    TabBarController()
+                } label: {
+                    CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
+                }
+                
                 
                 HStack(spacing: 6) {
                     Text("არ ხარ დარეგისტრირებული?")

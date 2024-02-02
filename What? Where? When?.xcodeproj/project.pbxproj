@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3237E20F2B6C879F004E6AC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E20E2B6C879F004E6AC0 /* TabBarController.swift */; };
+		3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */; };
 		3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BD2B694E8B0030E918 /* AppDelegate.swift */; };
 		3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */; };
 		3237E9C72B694E950030E918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3237E9C62B694E950030E918 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		3237E20E2B6C879F004E6AC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3237E9BA2B694E8B0030E918 /* What? Where? When?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What? Where? When?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3237E9BD2B694E8B0030E918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3237E9BF2B694E8B0030E918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3237E20E2B6C879F004E6AC0 /* TabBarController.swift */,
+				3237E2102B6C8B06004E6AC0 /* HomeViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
 				327903002B6B10940051D8F8 /* CustomPageView.swift in Sources */,
+				3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */,
 				327902FA2B6AF7E60051D8F8 /* OnboardingScreenView.swift in Sources */,
 				327903082B6C19890051D8F8 /* IntroView.swift in Sources */,
 				327902FD2B6B0F0A0051D8F8 /* PageModel.swift in Sources */,
