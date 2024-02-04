@@ -667,7 +667,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WN2YL6YWCV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "What? Where? When?/Info.plist";
+				INFOPLIST_FILE = "What? Where? When?/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -695,7 +695,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WN2YL6YWCV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "What? Where? When?/Info.plist";
+				INFOPLIST_FILE = "What? Where? When?/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
