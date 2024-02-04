@@ -167,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				327E202D2B69FEF500736DB4 /* App */,
+				327D6E662B6FC8BA0076993A /* Support */,
 				327903092B6C1A6D0051D8F8 /* Introduction (Onboarding) */,
 				327E202F2B69FF2800736DB4 /* Login */,
 				327E20362B69FFFE00736DB4 /* SignUp */,
@@ -175,9 +176,6 @@
 				32CF66302B6AD75700FB1A98 /* Reusable Components */,
 				327E20412B6A8C4400736DB4 /* Custom Fonts */,
 				327E203C2B6A6A8300736DB4 /* Extensions */,
-				327D6E5E2B6FAB040076993A /* GoogleService-Info.plist */,
-				3237E9C62B694E950030E918 /* Assets.xcassets */,
-				3237E9CB2B694E950030E918 /* Info.plist */,
 			);
 			path = "What? Where? When?";
 			sourceTree = "<group>";
@@ -223,6 +221,16 @@
 				327E202E2B69FF0E00736DB4 /* Onboarding */,
 			);
 			path = "Introduction (Onboarding)";
+			sourceTree = "<group>";
+		};
+		327D6E662B6FC8BA0076993A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				327D6E5E2B6FAB040076993A /* GoogleService-Info.plist */,
+				3237E9C62B694E950030E918 /* Assets.xcassets */,
+				3237E9CB2B694E950030E918 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		327E202D2B69FEF500736DB4 /* App */ = {
