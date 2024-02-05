@@ -18,6 +18,7 @@ final class HomeViewController: UIViewController {
         imageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .white
         return imageView
     }()
     
@@ -132,8 +133,6 @@ final class HomeViewController: UIViewController {
     private func setupNavigationBar() {
         self.navigationItem.titleView = customLogo
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: nil, action: nil)
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.tabBarController?.tabBar.isTranslucent = true
     }
     
     private func setupUI() {

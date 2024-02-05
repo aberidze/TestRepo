@@ -14,19 +14,14 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabBar()
-        UITabBar.appearance().tintColor = .backgroundGold
-        UITabBar.appearance().unselectedItemTintColor = .accentDarkGray
-        
-        let tabBarAppearance = UITabBarAppearance()
-        tabBarAppearance.configureWithOpaqueBackground()
-        tabBarAppearance.backgroundColor = .backgroundGray
-        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
-        UITabBar.appearance().standardAppearance = tabBarAppearance
     }
     
     
     // MARK: - Private Methods
     private func setupTabBar() {
+        UITabBar.appearance().tintColor = .backgroundGold
+        UITabBar.appearance().unselectedItemTintColor = .accentDarkGray
+        
         let homeVC = createNav(with: "მთავარი", and: UIImage(systemName: "house.fill"), vc: HomeViewController())
         let playVC = createNav(with: "თამაში", and: UIImage(systemName: "play.fill"), vc: PlayViewController())
         let ratingsVC = createNav(with: "რეიტინგი", and: UIImage(systemName: "trophy.fill"), vc: RatingsViewController())
@@ -36,17 +31,9 @@ final class TabBarController: UITabBarController {
     
     private func createNav(with title: String, and image: UIImage?, vc: UIViewController) -> UINavigationController {
         let nav = UINavigationController(rootViewController: vc)
+        nav.navigationBar.tintColor = .white
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
-        nav.navigationBar.tintColor = .white
-        
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.configureWithOpaqueBackground()
-        navigationBarAppearance.backgroundColor = .backgroundGray
-        nav.navigationBar.scrollEdgeAppearance = navigationBarAppearance
-        nav.navigationBar.standardAppearance = navigationBarAppearance
-        nav.navigationBar.compactAppearance = navigationBarAppearance
-        
         return nav
     }
 }
