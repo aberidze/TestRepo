@@ -1,57 +1,66 @@
 //
-//  CustomTextField.swift
+//  CustomTextFieldd.swift
 //  What? Where? When?
 //
-//  Created by Macbook Air 13 on 02.02.24.
+//  Created by Macbook Air 13 on 05.02.24.
 //
 
-import SwiftUI
+import UIKit
 
-struct CustomTextField: View {
+final class CustomTextField: UITextField {
+        
+    // MARK: - Initializers
+    init(placeholder: String, borderColor: UIColor, icon: String, isPassword: Bool) {
+        super.init(frame: .zero)
+        setupTextField(placeholder: placeholder, borderColor: borderColor, icon: icon, isPassword: isPassword)
+    }
     
-    // MARK: - Properties
-    @State var color: UIColor
-    @State var title: String
-    @State var text: String
-    @State var optionalIconName: String?
-    
-    
-    // MARK: - body
-    var body: some View {
-        HStack(spacing: 10) {
-            textfield
-            optionalRightIcon
-        }
-        .frame(height: 50)
-        .padding(.horizontal, 10)
-        .overlay {
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color(uiColor: color), lineWidth: 1)
-        }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     
-    // MARK: - Private Views
-    private var textfield: some View {
-        TextField(title, text: $text)
-            .font(Font(UIFont.ninoMkhedruliBook?.withSize(20) ?? .systemFont(ofSize: 20)))
-            .foregroundColor(Color(uiColor: .accentDarkGray))
+    // MARK: - Private Methods
+    private func setupTextField(placeholder: String, borderColor: UIColor, icon: String, isPassword: Bool) {
+        setupTextSettings(placeholder: placeholder, isPassword: isPassword)
+        setupBorders(borderColor: borderColor)
+        setupLeftAndRightViews(borderColor: borderColor, icon: icon)
+        setupConstraints()
     }
-
-    private var optionalRightIcon: some View {
-        Image(systemName: optionalIconName ?? "")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 24, height: 24)
-            .foregroundColor(Color(uiColor: color))
+    
+    private func setupTextSettings(placeholder: String, isPassword: Bool) {
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.accentDarkGray])
+        font = .ninoMkhedruliBook?.withSize(18)
+        textColor = .backgroundGold
+        isSecureTextEntry = isPassword
     }
-}
-
-
-// MARK: - Preview
-struct CustomTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        let text = ""
-        CustomTextField(color: .accentGold, title: "eye.slash.fill", text: "მეილი", optionalIconName: "eye.slash.fill")
+    
+    private func setupBorders(borderColor: UIColor) {
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = 1
+        layer.cornerRadius = 8
+    }
+    
+    private func setupLeftAndRightViews(borderColor: UIColor, icon: String) {
+        let width = (icon != "") ? 36 : 8
+        let leftOuterView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
+        let leftIconView = UIImageView(frame: CGRect(x: 8, y: 0, width: 20, height: 20))
+        leftIconView.contentMode = .scaleAspectFit
+        leftIconView.tintColor = borderColor
+        leftIconView.image = UIImage(systemName: icon)
+        leftOuterView.addSubview(leftIconView)
+        leftView = leftOuterView
+        leftViewMode = .always
+        
+        rightView = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: frame.height))
+        rightViewMode = .always
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            heightAnchor.constraint(equalToConstant: 60)
+        ])
     }
 }

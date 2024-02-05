@@ -10,8 +10,6 @@ import SwiftUI
 struct LoginView: View {
     
     // MARK: - Properties
-    @State var mailTitle: String = "მეილი"
-    @State var passwordTitle: String = "პაროლი"
     @State var mail: String = ""
     @State var password: String = ""
     @State var showLogin: Bool = false
@@ -44,7 +42,7 @@ struct LoginView: View {
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         withAnimation(.easeInOut(duration: 0.5)) {
-                            self.showLogin.toggle()
+                            showLogin = true
                             self.offsetY = 0
                         }
                     }
@@ -74,9 +72,9 @@ struct LoginView: View {
                 }
                 
                 VStack(spacing: 12) {
-                    CustomTextField(color: .accentLightGray, title: mailTitle, text: mail)
+//                    CustomTextField(color: .accentLightGray, title: "მეილი", text: $mail)
                     
-                    CustomTextField(color: .accentLightGray, title: "პაროლი", text: password, optionalIconName: "eye.slash.fill")
+//                    CustomTextField(color: .accentLightGray, title: "პაროლი", text: $mail, optionalIconName: "eye.slash.fill")
                     
                     HStack {
                         Spacer()
@@ -95,8 +93,8 @@ struct LoginView: View {
                 
                 NavigationLink {
                     tabBarControllerRepresentable()
-                        .navigationBarBackButtonHidden(true)
-                        .edgesIgnoringSafeArea(.vertical)
+                        .navigationBarBackButtonHidden()
+                        .edgesIgnoringSafeArea(.all)
                 } label: {
                     CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
                 }
@@ -105,9 +103,15 @@ struct LoginView: View {
                 HStack(spacing: 6) {
                     Text("არ ხარ დარეგისტრირებული?")
                         .font(Font(UIFont.ninoMkhedruliBook?.withSize(16) ?? .systemFont(ofSize: 16)))
-                    Text("რეგისტრაცია")
-                        .font(Font(UIFont.ninoMkhedruliBold?.withSize(16) ?? .systemFont(ofSize: 16)))
-                        .foregroundColor(Color(uiColor: .accentBlue))
+                    NavigationLink {
+                        SignUpViewControllerRepresentable()
+                            .toolbarRole(.editor)
+                            .edgesIgnoringSafeArea(.all)
+                    } label: {
+                        Text("რეგისტრაცია")
+                            .font(Font(UIFont.ninoMkhedruliBold?.withSize(16) ?? .systemFont(ofSize: 16)))
+                            .foregroundColor(Color(uiColor: .accentBlue))
+                    }
                 }
                 
                 Spacer()
