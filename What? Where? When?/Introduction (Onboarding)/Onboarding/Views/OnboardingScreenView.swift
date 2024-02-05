@@ -75,7 +75,7 @@ struct OnboardingScreenView: View {
     private var nextButton: some View {
         VStack {
             Spacer()
-            CustomButton(text: "შემდეგი", backgroundColor: .white, textColor: .backgroundGray)
+//            CustomButton(text: "შემდეგი", backgroundColor: .white, textColor: .backgroundGray)
                 .onTapGesture {
                     pageIndex += 1
                 }
@@ -86,7 +86,7 @@ struct OnboardingScreenView: View {
     private var startButton: some View {
         VStack {
             Spacer()
-            CustomButton(text: "დაწყება", backgroundColor: .white, textColor: .backgroundGray)
+//            CustomButton(text: "დაწყება", backgroundColor: .white, textColor: .backgroundGray)
                 .onTapGesture {
                     withAnimation(.spring()) {
                         onboardingViewed = true

@@ -111,11 +111,22 @@ final class SignUpViewController: UIViewController {
     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBackground()
         setupUI()
     }
     
     
     // MARK: - Private Methods
+    private func setupBackground() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = .backgroundGray
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = navBarAppearance
+    }
+    
     private func setupUI() {
         view.backgroundColor = .backgroundGray
         setupMainScrollView()
