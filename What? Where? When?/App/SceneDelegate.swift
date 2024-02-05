@@ -23,16 +23,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navController.isNavigationBarHidden = true
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
-        
-        let userRequest = RegisterUserRequest(fullName: "ანრი ბერიძე", email: "aberidze02@gmail.com", birthDate: "2002/23/09", city: "ბათუმი", aboutMe: nil, password: "password123")
-        AuthService.shared.registerUser(with: userRequest) { wasRegistered, error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            print("წარმატებული რეგისტრაცია")
-        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

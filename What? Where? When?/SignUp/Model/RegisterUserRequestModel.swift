@@ -7,11 +7,22 @@
 
 import Foundation
 
-struct RegisterUserRequest {
+final class RegisterUserRequest {
+    
+    // MARK: - Properties
     let fullName: String
     let email: String
     let birthDate: String
     let city: String
-    let aboutMe: String?
     let password: String
+    
+    
+    // MARK: - Initializers
+    init(fullName: String, email: String, birthDate: String, city: String, password: String) {
+        self.fullName = fullName
+        self.email = email
+        self.birthDate = birthDate
+        self.city = city
+        self.password = password
+    }
 }

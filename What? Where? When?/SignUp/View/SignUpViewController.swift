@@ -11,6 +11,8 @@ import SwiftUI
 final class SignUpViewController: UIViewController {
     
     // MARK: - Properties
+    private let viewModel = SignUpViewModel()
+    
     private let mainScrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -57,15 +59,13 @@ final class SignUpViewController: UIViewController {
         return stackView
     }()
     
-    private let fullNameTextField = CustomTextField(placeholder: "სახელი, გვარი", borderColor: .accentLightGray, icon: "person.fill", isPassword: false)
+    private let fullNameTextField = CustomTextField(placeholder: "სახელი, გვარი", borderColor: .accentLightGray, icon: "person.fill")
     
-    private let mailTextField = CustomTextField(placeholder: "მეილი", borderColor: .accentLightGray, icon: "envelope.fill", isPassword: false)
+    private let mailTextField = CustomTextField(placeholder: "მეილი", borderColor: .accentLightGray, icon: "envelope.fill")
     
-    private let birthdateTextField = CustomTextField(placeholder: "დაბადების თარიღი", borderColor: .accentLightGray, icon: "calendar", isPassword: false)
+    private let birthdateTextField = CustomDatePickerTextField(placeholder: "დაბადების თარიღი", borderColor: .accentLightGray, icon: "calendar")
     
-    private let cityTextField = CustomTextField(placeholder: "საცხოვრებელი ქალაქი", borderColor: .accentLightGray, icon: "mappin.and.ellipse", isPassword: false)
-    
-    private let aboutMeTextField = CustomTextField(placeholder: "ჩემ შესახებ (არასავალდებულო)", borderColor: .accentLightGray, icon: "square.and.pencil", isPassword: false)
+    private let cityTextField = CustomTextField(placeholder: "საცხოვრებელი ქალაქი", borderColor: .accentLightGray, icon: "mappin.and.ellipse")
     
     private let passwordsStackView: UIStackView = {
         let stackView = UIStackView()
@@ -116,6 +116,7 @@ final class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setButtonActions()
     }
     
     
@@ -154,7 +155,6 @@ final class SignUpViewController: UIViewController {
         textFieldsStackView.addArrangedSubview(mailTextField)
         textFieldsStackView.addArrangedSubview(birthdateTextField)
         textFieldsStackView.addArrangedSubview(cityTextField)
-        textFieldsStackView.addArrangedSubview(aboutMeTextField)
     }
     
     private func setupPasswordsStackView() {
@@ -169,6 +169,19 @@ final class SignUpViewController: UIViewController {
         setSignUpButtonStackViewConstraints()
         setSignUpButtonStackViewMargins()
         signUpButtonStackView.addArrangedSubview(signUpButton)
+    }
+    
+    private func setButtonActions() {
+        signUpButton.addAction(UIAction(handler: { [weak self] _ in
+            let userRequest = RegisterUserRequest(
+                fullName: (self?.fullNameTextField.text) ?? "",
+                email: (self?.mailTextField.text) ?? "",
+                birthDate: (self?.birthdateTextField.text) ?? "",
+                city: (self?.cityTextField.text) ?? "",
+                password: (self?.passwordTextField.text) ?? ""
+            )
+            self?.viewModel.registerUser(userRequest: userRequest)
+        }), for: .touchUpInside)
     }
     
     
@@ -196,7 +209,7 @@ final class SignUpViewController: UIViewController {
     
     private func setMainStackViewMargins() {
         mainStackView.isLayoutMarginsRelativeArrangement = true
-        mainStackView.layoutMargins = UIEdgeInsets(top: 20, left: 16, bottom: 0, right: 16)
+        mainStackView.layoutMargins = UIEdgeInsets(top: 20, left: 16, bottom: 50, right: 16)
     }
     
     private func setSignUpButtonStackViewConstraints() {
