@@ -63,6 +63,10 @@ final class SignUpViewController: UIViewController {
     
     private let birthdateTextField = CustomTextField(placeholder: "დაბადების თარიღი", borderColor: .accentLightGray, icon: "calendar", isPassword: false)
     
+    private let cityTextField = CustomTextField(placeholder: "საცხოვრებელი ქალაქი", borderColor: .accentLightGray, icon: "mappin.and.ellipse", isPassword: false)
+    
+    private let aboutMeTextField = CustomTextField(placeholder: "ჩემ შესახებ (არასავალდებულო)", borderColor: .accentLightGray, icon: "square.and.pencil", isPassword: false)
+    
     private let passwordsStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -149,6 +153,8 @@ final class SignUpViewController: UIViewController {
         textFieldsStackView.addArrangedSubview(fullNameTextField)
         textFieldsStackView.addArrangedSubview(mailTextField)
         textFieldsStackView.addArrangedSubview(birthdateTextField)
+        textFieldsStackView.addArrangedSubview(cityTextField)
+        textFieldsStackView.addArrangedSubview(aboutMeTextField)
     }
     
     private func setupPasswordsStackView() {
