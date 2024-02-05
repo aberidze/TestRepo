@@ -1,43 +1,44 @@
 //
-//  CustomButton.swift
+//  CustomButtonn.swift
 //  What? Where? When?
 //
-//  Created by Macbook Air 13 on 01.02.24.
+//  Created by Macbook Air 13 on 05.02.24.
 //
 
-import SwiftUI
+import UIKit
 
-struct CustomButton: View {
+final class CustomButton: UIButton {
     
-    // MARK: - Properties
-    @State var text: String
-    @State var backgroundColor: UIColor
-    @State var textColor: UIColor
-    
-    
-    // MARK: - body
-    var body: some View {
-        
-        HStack {
-            Spacer()
-            
-            Text(text)
-                .font(Font(UIFont.ninoMtavruli?.withSize(16) ?? .systemFont(ofSize: 16)))
-                .foregroundColor(Color(uiColor: textColor))
-            
-            Spacer()
-        }
-        .frame(maxWidth: 260, maxHeight: 44)
-        .background(Color(uiColor: backgroundColor))
-        .cornerRadius(10)
-        .shadow(radius: 20)
+    // MARK: - Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupButton()
     }
-}
-
-
-// MARK: - Preview
-struct CustomButton_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomButton(text: "შემდეგი", backgroundColor: .white, textColor: .backgroundGray)
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    // MARK: - Private Methods
+    private func setupButton() {
+        setupButtonDesign()
+        setConstraints()
+    }
+    
+    private func setupButtonDesign() {
+        titleLabel?.font = .ninoMtavruli?.withSize(16)
+        layer.cornerRadius = 10
+        clipsToBounds = true
+    }
+    
+    func setColors(background bckgColor: UIColor, text textColor: UIColor) {
+        backgroundColor = bckgColor
+        setTitleColor(textColor, for: .normal)
+    }
+    
+    private func setConstraints() {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
 }

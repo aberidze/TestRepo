@@ -20,7 +20,6 @@
 		327902FA2B6AF7E60051D8F8 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902F92B6AF7E60051D8F8 /* OnboardingScreenView.swift */; };
 		327902FD2B6B0F0A0051D8F8 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902FC2B6B0F0A0051D8F8 /* PageModel.swift */; };
 		327903002B6B10940051D8F8 /* CustomPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327902FF2B6B10940051D8F8 /* CustomPageView.swift */; };
-		327903022B6B1BD40051D8F8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327903012B6B1BD40051D8F8 /* CustomButton.swift */; };
 		327903062B6C18710051D8F8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327903052B6C18710051D8F8 /* LoginView.swift */; };
 		327903082B6C19890051D8F8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327903072B6C19890051D8F8 /* IntroView.swift */; };
 		327D6E5F2B6FAB040076993A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 327D6E5E2B6FAB040076993A /* GoogleService-Info.plist */; };
@@ -28,7 +27,7 @@
 		327D6E652B6FB9900076993A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 327D6E642B6FB9900076993A /* FirebaseAnalyticsSwift */; };
 		327D7B082B6FE11300644D4C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 327D7B072B6FE11300644D4C /* FirebaseAuth */; };
 		327D7B0C2B70571800644D4C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B0B2B70571800644D4C /* CustomTextField.swift */; };
-		327D7B0E2B70574B00644D4C /* CustomButtonn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B0D2B70574B00644D4C /* CustomButtonn.swift */; };
+		327D7B102B706BBF00644D4C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D7B0F2B706BBF00644D4C /* CustomButton.swift */; };
 		327E20382B6A003300736DB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E20372B6A003300736DB4 /* SignUpViewController.swift */; };
 		327E203B2B6A005D00736DB4 /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */; };
 		327E203E2B6A6A9600736DB4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E203D2B6A6A9600736DB4 /* Color+Extension.swift */; };
@@ -89,12 +88,11 @@
 		327902F92B6AF7E60051D8F8 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		327902FC2B6B0F0A0051D8F8 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		327902FF2B6B10940051D8F8 /* CustomPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageView.swift; sourceTree = "<group>"; };
-		327903012B6B1BD40051D8F8 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		327903052B6C18710051D8F8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		327903072B6C19890051D8F8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		327D6E5E2B6FAB040076993A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		327D7B0B2B70571800644D4C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		327D7B0D2B70574B00644D4C /* CustomButtonn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonn.swift; sourceTree = "<group>"; };
+		327D7B0F2B706BBF00644D4C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		327E20372B6A003300736DB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		327E203A2B6A005D00736DB4 /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
 		327E203D2B6A6A9600736DB4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -339,11 +337,10 @@
 		32CF66302B6AD75700FB1A98 /* Reusable Components */ = {
 			isa = PBXGroup;
 			children = (
-				327903012B6B1BD40051D8F8 /* CustomButton.swift */,
 				32E4C3C22B6D2C75001385E5 /* CustomPlayButton.swift */,
 				32E4C3C62B6D8851001385E5 /* CustomDashboardItem.swift */,
 				327D7B0B2B70571800644D4C /* CustomTextField.swift */,
-				327D7B0D2B70574B00644D4C /* CustomButtonn.swift */,
+				327D7B0F2B706BBF00644D4C /* CustomButton.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -512,10 +509,9 @@
 				327902FA2B6AF7E60051D8F8 /* OnboardingScreenView.swift in Sources */,
 				327903082B6C19890051D8F8 /* IntroView.swift in Sources */,
 				3237E2132B6C8EBE004E6AC0 /* PlayViewController.swift in Sources */,
-				327D7B0E2B70574B00644D4C /* CustomButtonn.swift in Sources */,
+				327D7B102B706BBF00644D4C /* CustomButton.swift in Sources */,
 				327902FD2B6B0F0A0051D8F8 /* PageModel.swift in Sources */,
 				3237E2152B6C8EF1004E6AC0 /* RatingsViewController.swift in Sources */,
-				327903022B6B1BD40051D8F8 /* CustomButton.swift in Sources */,
 				327D7B0C2B70571800644D4C /* CustomTextField.swift in Sources */,
 				3237E9C02B694E8B0030E918 /* SceneDelegate.swift in Sources */,
 				327903062B6C18710051D8F8 /* LoginView.swift in Sources */,

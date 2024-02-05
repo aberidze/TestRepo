@@ -94,8 +94,8 @@ final class SignUpViewController: UIViewController {
         return stackView
     }()
     
-    private let signUpButton: CustomButtonn = {
-        let button = CustomButtonn()
+    private let signUpButton: CustomButton = {
+        let button = CustomButton()
         button.setTitle("რეგისტრაცია", for: .normal)
         button.setColors(background: .white, text: .backgroundGray)
         return button

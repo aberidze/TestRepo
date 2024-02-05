@@ -96,7 +96,7 @@ struct LoginView: View {
                         .navigationBarBackButtonHidden()
                         .edgesIgnoringSafeArea(.all)
                 } label: {
-                    CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
+//                    CustomButton(text: "შესვლა", backgroundColor: .backgroundGray, textColor: .white)
                 }
                 
                 
