@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class CustomTextField: UITextField {
     
@@ -23,7 +24,7 @@ class CustomTextField: UITextField {
     // MARK: - Initializers
     init(placeholder: String, borderColor: UIColor, icon: String, isPassword: Bool? = false) {
         super.init(frame: .zero)
-        setupTextField(placeholder: placeholder, borderColor: borderColor, icon: icon, isPassword: isPassword!)
+        setupTextField(placeholder: placeholder, borderColor: borderColor, icon: icon, isPassword: isPassword ?? false)
     }
     
     required init?(coder: NSCoder) {
@@ -45,6 +46,8 @@ class CustomTextField: UITextField {
         font = .ninoMkhedruliBook?.withSize(18)
         textColor = .backgroundGold
         isSecureTextEntry = isPassword
+        autocorrectionType = .no
+        autocapitalizationType = .none
     }
     
     private func setupBorders(borderColor: UIColor) {
@@ -54,10 +57,10 @@ class CustomTextField: UITextField {
     }
     
     private func setupLeftView(borderColor: UIColor, icon: String) {
-        let width = (icon != "") ? 36 : 8
+        let width = (icon != "") ? 44 : 8
 
         let leftOuterView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-        let leftIconView = UIImageView(frame: CGRect(x: 8, y: 0, width: 20, height: 20))
+        let leftIconView = UIImageView(frame: CGRect(x: 12, y: 0, width: 20, height: 20))
         leftIconView.contentMode = .scaleAspectFit
         leftIconView.tintColor = borderColor
         leftIconView.image = UIImage(systemName: icon)
@@ -67,7 +70,7 @@ class CustomTextField: UITextField {
     }
     
     private func setupRightView(borderColor: UIColor) {
-        let rightOuterView = UIView(frame: CGRect(x: 0, y: 0, width: 36, height: 20))
+        let rightOuterView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 20))
         eyeButton.tintColor = borderColor
         rightOuterView.addSubview(eyeButton)
         rightView = rightOuterView
