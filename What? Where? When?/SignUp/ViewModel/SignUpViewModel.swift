@@ -9,12 +9,15 @@ import Foundation
 
 final class SignUpViewModel {
     
+    // MARK: - Properties
     private let authManager: AuthenticationManager
+    
     
     // MARK: - Init
     init(authManager: AuthenticationManager = AuthenticationManager.shared) {
         self.authManager = authManager
     }
+    
     
     // MARK: - Methods
     func registerUser(userRequest: RegisterUserRequest) {

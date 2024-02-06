@@ -19,11 +19,8 @@ struct IntroView: View {
             Color(uiColor: .backgroundGray)
                 .ignoresSafeArea()
             
-            if onboardingViewed {
-                LoginView()
-            } else {
-                OnboardingScreenView()
-            }
+            if onboardingViewed { LoginView() }
+            else                { OnboardingScreenView() }
         }
     }
 }

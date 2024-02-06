@@ -25,6 +25,7 @@
 		327904B62B719C9800AA9994 /* CustomTextFieldRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327904B52B719C9800AA9994 /* CustomTextFieldRepresentable.swift */; };
 		327904B82B71A6FF00AA9994 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327904B72B71A6FF00AA9994 /* View+Extension.swift */; };
 		327904BA2B71AB4B00AA9994 /* CustomButtonRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327904B92B71AB4B00AA9994 /* CustomButtonRepresentable.swift */; };
+		327904BC2B72609700AA9994 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327904BB2B72609700AA9994 /* LoginViewModel.swift */; };
 		327C44912B7115AC001AB7A4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 327C44902B7115AC001AB7A4 /* FirebaseFirestore */; };
 		327C44932B7115B3001AB7A4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 327C44922B7115B3001AB7A4 /* FirebaseFirestoreSwift */; };
 		327C44972B71450D001AB7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C44962B71450D001AB7A4 /* AuthenticationManager.swift */; };
@@ -103,6 +104,7 @@
 		327904B52B719C9800AA9994 /* CustomTextFieldRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldRepresentable.swift; sourceTree = "<group>"; };
 		327904B72B71A6FF00AA9994 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		327904B92B71AB4B00AA9994 /* CustomButtonRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonRepresentable.swift; sourceTree = "<group>"; };
+		327904BB2B72609700AA9994 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		327C44962B71450D001AB7A4 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		327C44982B714B90001AB7A4 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		327C449B2B716F2F001AB7A4 /* CustomDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerTextField.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				327903052B6C18710051D8F8 /* LoginView.swift */,
+				327904BB2B72609700AA9994 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				327C449C2B716F2F001AB7A4 /* CustomDatePickerTextField.swift in Sources */,
 				32E4C3C72B6D8851001385E5 /* CustomDashboardItem.swift in Sources */,
 				3237E9BE2B694E8B0030E918 /* AppDelegate.swift in Sources */,
+				327904BC2B72609700AA9994 /* LoginViewModel.swift in Sources */,
 				327903002B6B10940051D8F8 /* CustomPageView.swift in Sources */,
 				327904B62B719C9800AA9994 /* CustomTextFieldRepresentable.swift in Sources */,
 				3237E2112B6C8B06004E6AC0 /* HomeViewController.swift in Sources */,

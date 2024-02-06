@@ -10,10 +10,7 @@ import SwiftUI
 struct LoginView: View {
     
     // MARK: - Properties
-    @State var mailText: String = ""
-    @State var passwordText: String = ""
-    @State var showLogin: Bool = false
-    @State var offsetY = UIScreen.main.bounds.height
+    @ObservedObject var viewModel = LoginViewModel()
     
     
     // MARK: - body
@@ -22,6 +19,14 @@ struct LoginView: View {
             ZStack {
                 backgroundColor
                 mainAnimatedView
+                    .onAppear {
+                        let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
+                        viewModel.userIsSignedIn = authUser != nil
+                    }
+                    .fullScreenCover(isPresented: $viewModel.userIsSignedIn) {
+                        tabBarControllerRepresentable()
+                            .edgesIgnoringSafeArea(.all)
+                    }
             }
         }
     }
@@ -44,35 +49,30 @@ struct LoginView: View {
                 Spacer()
             }
             
-            if showLogin {
+            if viewModel.showLogin {
                 loginStackView
-                    .offset(y: offsetY)
+                    .offset(y: viewModel.offsetY)
             }
         }
     }
     
     private var mainAnimatedView: some View {
         mainDisplayView
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                withAnimation(.easeInOut(duration: 0.5)) {
-                    showLogin = true
-                    self.offsetY = 0
-                }
+            .onAppear {
+                viewModel.animate()
             }
-        }
     }
     
     private var loginStackView: some View {
         VStack {
             Spacer()
             loginSheetView
-            .padding(.top, 30)
-            .padding(.horizontal, 16)
-            .background(.white)
-            .cornerRadius(20, corners: [.topLeft, .topRight])
-            .ignoresSafeArea(edges: .bottom)
-            .frame(height: UIScreen.main.bounds.height / 2)
+                .padding(.top, 30)
+                .padding(.horizontal, 16)
+                .background(.white)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+                .ignoresSafeArea(edges: .bottom)
+                .frame(height: UIScreen.main.bounds.height / 2)
         }
     }
     
@@ -97,43 +97,28 @@ struct LoginView: View {
         }
     }
     
-    private var rememberMeView: some View {
-        HStack {
-            Image(systemName: "square")
-            Text("დამიმახსოვრე")
-                .font(Font(UIFont.ninoMkhedruliBook?.withSize(20) ?? .systemFont(ofSize: 20)))
-            Spacer()
-        }
-    }
-    
     private var textFieldsView: some View {
         VStack(spacing: 12) {
-            CustomTextViewRepresentable(placeholder: "მეილი", borderColor: .accentLightGray, icon: "envelope.fill", text: $mailText) { text in
+            CustomTextViewRepresentable(placeholder: "მეილი", borderColor: .accentLightGray, icon: "envelope.fill", text: $viewModel.email) { text in
                 //
             }
             .frame(height: 60)
             
-            CustomTextViewRepresentable(placeholder: "პაროლი", borderColor: .accentLightGray, icon: "lock.fill", isPassword: true, text: $passwordText) { text in
+            CustomTextViewRepresentable(placeholder: "პაროლი", borderColor: .accentLightGray, icon: "lock.fill", isPassword: true, text: $viewModel.password) { text in
                 //
             }
             .frame(height: 60)
             
             forgetPasswordView
-            rememberMeView
         }
     }
     
     private var signInButtonView: some View {
-        NavigationLink {
-            tabBarControllerRepresentable()
-                .navigationBarBackButtonHidden()
-                .edgesIgnoringSafeArea(.all)
-        } label: {
-            CustomButtonRepresentable(title: "შესვლა", backgroundColor: .backgroundGray, textColor: .white) {
-                //
-            }
-            .frame(width: 260, height: 44)
+        CustomButtonRepresentable(title: "შესვლა", backgroundColor: .backgroundGray, textColor: .white) {
+            
+            viewModel.signUserIn()
         }
+        .frame(width: 260, height: 44)
     }
     
     private var registerButtonView: some View {
